@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Robot Control</title>
+  <style>
+    body {
+      background-color: #F5F5F5;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    
+    h1 {
+      color: #87CEEB;
+    }
+    
+    .button-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 90px;
+    }
+    
+    .button {
+      background-color: #2F4F4F;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      margin: 5px;
+    }
+    
+    .button:hover {
+      background-color: #2F4F4F;
+    }
+  </style>
+  <script src="controll.js"></script>
+</head>
+
+</body>
+
+<body>
+
+
+    <button class="button" onclick="sendValue('Forward')">Forward</button>
+<button class="button" onclick="sendValue('Backward')">Backward</button>
+<button class="button" onclick="sendValue('Left')">Left</button>
+<button class="button" onclick="sendValue('Right')">Right</button>
+<button class="button" onclick="sendValue('Stop')">Stop</button>
+<button class="button" onclick="sendValue('Reset')">Reset</button>
+
+    <script>
+    function sendValue(buttonValue) {
+        // إرسال قيمة الزر المناسبة إلى صفحة "dataa.html" باستخدام جلسة
+        sessionStorage.setItem('buttonValue', buttonValue);
+        window.location.assign("dataa.html");
+    }
+    </script>
+
+</body>
+</html>
