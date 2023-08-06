@@ -8,3 +8,6 @@ https://github.com/akfagi/Smart-Methods/assets/139698529/46995aaa-227f-461d-b0b8
 The map pic:
 ![Map](https://github.com/akfagi/Smart-Methods/assets/139698529/81de6f34-62ce-48c6-83ae-1e606937cb63)
 
+
+# Smart-Methods
+Taask2
